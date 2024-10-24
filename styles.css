@@ -1,102 +1,3 @@
-To implement different colors for each category, you can update the CSS to assign distinct colors to each category heading. I'll show you how to style each category header and provide unique colors for better visual separation.
-
-### Updated HTML with Category Colors:
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOP List - JSW Steel</title>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-        // Toggle visibility of SOPs when category is clicked
-        function toggleCategory(categoryId) {
-            const category = document.getElementById(categoryId);
-            if (category.style.display === "none") {
-                category.style.display = "block";
-            } else {
-                category.style.display = "none";
-            }
-        }
-    </script>
-</head>
-<body>
-
-    <header>
-        <div class="header-content">
-            <img src="download.png" alt="JSW Steel Logo" class="logo">
-            <h1>JSW Steel Narayanposhi Mines - Standard Operating Procedures (SOP)</h1>
-        </div>
-    </header>
-
-    <main>
-        <h2>Mining Operations SOPs</h2>
-        
-        <!-- HEMM & LMV OPERATIONS -->
-        <h3 class="hemm-lmv" onclick="toggleCategory('hemm-lmv')">HEMM & LMV OPERATIONS (SOP)</h3>
-        <ul id="hemm-lmv" style="display: none;">
-            <li><a href="https://jsw-my.sharepoint.com/:w:/g/personal/anek_kumar_jsw_in/EaRYu6mhkcBOqGXX2gjO2XkBR4qZYI5h_uhmExq1CGgp9A?e=fOqj7g" target="_blank">SOP - Drilling Operations</a></li>
-            <li><a href="https://jsw-my.sharepoint.com/:w:/g/personal/anek_kumar_jsw_in/EYBkhdeFEyJDmpUG-keBQuIBCxXESaJCoEQvPsmrCSaBTg?e=3pZ4Jp" target="_blank">SOP - Excavator Operations</a></li>
-            <!-- Add other SOPs -->
-        </ul>
-
-        <!-- ELECTRICAL OPERATIONS -->
-        <h3 class="electrical" onclick="toggleCategory('electrical')">ELECTRICAL OPERATIONS (SOP)</h3>
-        <ul id="electrical" style="display: none;">
-            <li><a href="https://jsw-my.sharepoint.com/:w:/g/personal/anek_kumar_jsw_in/EWNcNxEUFuRDsDSwSk5wU8MBtB_GpNrt7T0EnW5pRByY2g?e=vUWmKv" target="_blank">SOP - Carrying out Electrical Repairs on both HT & LT Switches</a></li>
-            <!-- Add other SOPs -->
-        </ul>
-
-        <!-- BLASTING OPERATIONS -->
-        <h3 class="blasting" onclick="toggleCategory('blasting')">BLASTING OPERATION (SOP)</h3>
-        <ul id="blasting" style="display: none;">
-            <li><a href="https://jsw-my.sharepoint.com/:b:/g/personal/anek_kumar_jsw_in/EZaw6MpbM_9Hr2RzIgJ7334BeqAig4wDbXZqpOseD9_2eQ?e=Ri0cgS" target="_blank">SOP - HANDLING OF SME Operations</a></li>
-            <!-- Add other SOPs -->
-        </ul>
-
-        <!-- LOGISTIC OPERATIONS -->
-        <h3 class="logistics" onclick="toggleCategory('logistics')">LOGISTIC OPERATION (SOP)</h3>
-        <ul id="logistics" style="display: none;">
-            <li><a href="https://jsw-my.sharepoint.com/:w:/g/personal/anek_kumar_jsw_in/EQkGkvK2k2tCsPQwRFBBf9gBjSYUFPXhS07fzmhqx6yLXg?e=UZybLZ" target="_blank">SOP - Transportation truck Drivers Operations</a></li>
-            <!-- Add other SOPs -->
-        </ul>
-
-        <!-- STACK & QUALITY OPERATIONS -->
-        <h3 class="stack-quality" onclick="toggleCategory('stack-quality')">STACK & QUALITY OPERATION (SOP)</h3>
-        <ul id="stack-quality" style="display: none;">
-            <li><a href="https://jsw-my.sharepoint.com/:w:/g/personal/anek_kumar_jsw_in/EZCxtr94aGdLmZlhDzuk4e4BWDfKC36PNyukqPfObmoncA?e=wDQecN" target="_blank">SOP - Stack Making & Approval Process Operations</a></li>
-            <!-- Add other SOPs -->
-        </ul>
-
-        <!-- CPU & MECHANICAL OPERATIONS -->
-        <h3 class="cpu-mechanical" onclick="toggleCategory('cpu-mechanical')">CPU & MECHANICAL OPERATION (SOP)</h3>
-        <ul id="cpu-mechanical" style="display: none;">
-            <li><a href="https://jsw-my.sharepoint.com/:w:/g/personal/anek_kumar_jsw_in/ERci10Bs8N9Gi1K38KTePFsBXMpAHy25A89aVaKcmrQ_CA?e=1NcPWO" target="_blank">SOP - Excavation Works-CPU project Operations</a></li>
-            <!-- Add other SOPs -->
-        </ul>
-
-        <!-- OTHERS -->
-        <h3 class="others" onclick="toggleCategory('others')">OTHERS (SOP)</h3>
-        <ul id="others" style="display: none;">
-            <li><a href="https://jsw-my.sharepoint.com/:w:/g/personal/anek_kumar_jsw_in/Efb9FfCUNJdPlMdu9edSWTQBBmpvjU30p4fpCpW6mqy9Lw?e=yUL5gH" target="_blank">SOP - Lockout-Tag out Operations</a></li>
-            <!-- Add other SOPs -->
-        </ul>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 JSW Steel Ltd. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
-```
-
-### CSS (styles.css)
-
-```css
-/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -148,7 +49,7 @@ h3 {
 
 /* HEMM & LMV */
 h3.hemm-lmv {
-    color: 8A2BE2;
+    color: #8A2BE2;
 }
 
 h3.hemm-lmv:hover {
